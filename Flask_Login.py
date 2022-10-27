@@ -23,10 +23,13 @@ app.config['SQLALCHEMY_KEY'] = 'secretkey'
 #         min=4 , max=20)], render_kw={"placeholder":"Password"})
     
 #     submit = SubmitField("Register")
-
 @app.route('/')
 def home():
     return render_template('home.html')
+
+@app.route('/main')
+def main_Page():
+    return render_template('main.html')
 
 @app.route('/login')
 def login():
