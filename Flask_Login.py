@@ -28,14 +28,14 @@ def home():
     return render_template('home.html')
 
 @app.route('/main')
-def main_Page():
+def main():
     return render_template('main.html')
 
-@app.route('/login')
+@app.route('/main/login')
 def login():
     return render_template('login.html')
 
-@app.route('/register')
+@app.route('/main/register')
 def register():
     return render_template('register.html')
 
