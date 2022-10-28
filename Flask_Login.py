@@ -8,7 +8,7 @@ from flask_login import UserMixin
 
 app = Flask(__name__)
 db = SQLAlchemy(app)
-app.config['SQLALCHEMY_DATABASE_URI']='postgresql://webadmin:RTTooa27373@node37431-project.proen.app.ruk-com.cloud:5432/login' # define ของ databaseSQL ดึง database
+# app.config['SQLALCHEMY_DATABASE_URI']='postgresql://webadmin:RTTooa27373@node37431-project.proen.app.ruk-com.cloud:5432/login' # define ของ databaseSQL ดึง database
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # ปิดข้อความโชว์ ถ้าจะเปิดให้เป็น True
 app.config['SQLALCHEMY_KEY'] = 'secretkey' 
 
