@@ -4,11 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/mod.css">
     <title>Main</title>
 </head>
 <body>
-    <h1>Main PAGE</h1>
-    <a  href="{{url_for('login')}}">Login Page</a><br>
-    <a href="{{url_for('register')}}">Register Page</a><br>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="{{ url_for('home') }}"><img src="static/img/Gold.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItem">
+                        <li><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('main') }}">Main</a></li>
+                        <li><a href="{{ url_for('login') }}">Login</a></li>
+                        <li><a href="{{ url_for('register') }}">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Gold Trader</h1>
+                    <p>เช็คราคาทองวันนี้ ราคาทองคำแท่ง ราคาทองรูปพรรณ 
+                        ราคารับซื้อ และ ราคาขาย</p>
+                </div>
+                <div class="col-2">
+                    <img src="static/img/Goldimg1.jpg" width="350px">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--  Information  -->>
+
+
+
+<!------footer------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>ติดตั้งบนแอป Android และ IOS</p>
+                    <div class="app-logo">
+                        <a href="https://www.android.com/"><img src="static/img/play-store.png"></a>
+                        <a href="https://www.apple.com/ios/ios-15/"><img src="static/img/app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h3>" สินค้าทุกชิ้นถึงมือลูกค้าไว้วางใจเรา "</h3>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Links</h3>
+                    <ul class="link">
+                        <li><a href="https://kmutnb.ac.th/">KMUTNB</a></li>
+                        <li><a href="https://www.facebook.com/FITM.KMUTNB/">FITM</a></li>
+                        <li><a href="https://www.facebook.com/INEKMUTNB/">INE</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/Joddna">Facbook</a></li>
+                        <li><a href="https://www.instagram.com/jod_jakapat/">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCcD6g_TOz5Z-ugJgROGhbYw">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Jakapat</p>
+        </div>
+    </div>
 </body>
 </html>

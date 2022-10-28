@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/homepage.css">
     <title>HOME</title>
 </head>
-<body>
-    <h1>HOME PAGE</h1>
-    <a  href="{{url_for('main')}}">Main Page</a><br>
+<body style="background-image: url(static/img/background.jpg);">
+    <div class="banner-area">
+        <header>
+            <a href="{{ url_for('home') }}" class="logo">GoldTrader</a>
+            <ul class="menu">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('main') }}">Main</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+
+            </ul>
+        </header>
+        <div class="banner-text">
+            <h2>ยินดีต้อนรับเข้าสู้เว็บไซต์ของเรา</h2>
+            <p>เว็บที่เช็คราคาทองโลกและทองรูปพรรณต่างๆ<br>Gold Trader</p>
+            <a href="{{ url_for('main') }}">เข้าสู่เว็บไซต์</a>
+        </div>
+    </div>
 </body>
 </html>

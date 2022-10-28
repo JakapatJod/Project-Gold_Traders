@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/M_login.css') }}" rel="stylesheet">
+
     <title>Login</title>
 </head>
 <body>
-    <h1>Login Page</h1>
+    <div class="box">
+        <div class="form">
+            <h2>Sign in</h2>
+            <div class="inputBox">
+                <input type="text" required="required">
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#"></a>
+                <a href="#">Signup</a>
+
+            </div>
+            <input type ="submit" value="Login">
+        </div>
+    </div>
+<!--  Information  -->
 
 </body>
 </html>
