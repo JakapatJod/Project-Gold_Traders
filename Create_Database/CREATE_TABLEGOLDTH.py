@@ -2,8 +2,11 @@ import psycopg2
 from psycopg2 import Error 
 
 try:
-    connection = psycopg2.connect(user="webadmin",password="RTTooa27373", host="node36662-jakapat.proen.app.ruk-com.cloud"
-                                    , port="11243", database="postgres")
+    connection = psycopg2.connect(user='webadmin',
+                                    password='ZSAxvp50885',
+                                    host='node38438-project.proen.app.ruk-com.cloud',
+                                    port='11260',
+                                    database='postgres')
 
     cursor = connection.cursor()
 

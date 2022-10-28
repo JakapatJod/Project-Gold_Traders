@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/M_login_Regis.css') }}" rel="stylesheet">
+
+    <title>Registration</title>
+</head>
+<body>
+    <div class="box">
+        <div class="form">
+            <h2>Registration</h2>
+            <div class="inputBox">
+                <input type="text" class="form-control" name="username" id="username" required="required" >
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" class="form-control" name="password" placeholder="Password" id="password" required="required">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" class="form-control" name="email" id="email" required="required">
+                <span>E-mail</span>
+                <i></i>
+            </div>
+            <div class="buttonHolder">
+                <input type ="submit" value="Submit" >
+            </div>
+        </div>
+    </div>
+<!--  Information  -->
+
+</body>
+</html>

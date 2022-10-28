@@ -2,17 +2,20 @@ import psycopg2
 from psycopg2 import Error 
 
 try:
-    connection = psycopg2.connect(user="webadmin",password="RTTooa27373", host="node36662-jakapat.proen.app.ruk-com.cloud"
-                                    , port="11243", database="postgres")
+    connection = psycopg2.connect(user='webadmin',
+                                    password='ZSAxvp50885',
+                                    host='node38438-project.proen.app.ruk-com.cloud',
+                                    port='11260',
+                                    database='login')
 
     cursor = connection.cursor()
 
     create_table_guery = '''CREATE TABLE accounts
-        (user_id SERIAL PRIMARY KEY,
+        (id SERIAL PRIMARY KEY,
         username      VARCHAR(50) NOT NULL,
-        password      VARCHAR(255) NOT NULL,
-        email      VARCHAR(50),
-        code_repassword VARCHAR(50) NOT NULL ); '''
+        password      VARCHAR(50) NOT NULL,
+        address      VARCHAR(255) NOT NULL,
+        contact     INTEGER NOT NULL); '''
 
     cursor.execute(create_table_guery)
     connection.commit()
