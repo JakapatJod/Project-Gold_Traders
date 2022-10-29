@@ -10,8 +10,8 @@ import psycopg2.extras
 app = Flask(__name__)
 db = SQLAlchemy(app)
 
-app.config['SQLALCHEMY_DATABASE_URI']='postgresql://webadmin:ZSAxvp50885@10.104.9.88:11260/login'
-#app.config['SQLALCHEMY_DATABASE_URI']='postgresql://webadmin:ZSAxvp50885@node38438-project.proen.app.ruk-com.cloud:11260/login' # define ของ databaseSQL ดึง database
+# app.config['SQLALCHEMY_DATABASE_URI']='postgresql://webadmin:ZSAxvp50885@10.104.9.88:5432/login'
+app.config['SQLALCHEMY_DATABASE_URI']='postgresql://webadmin:ZSAxvp50885@node38438-project.proen.app.ruk-com.cloud:11260/login' # define ของ databaseSQL ดึง database
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # ปิดข้อความโชว์ ถ้าจะเปิดให้เป็น True
 app.config['SQLALCHEMY_KEY'] = 'how_to_Get_KEY' 
 
@@ -93,6 +93,10 @@ def logout():
 @app.route('/check')
 def check():
     return render_template('check.html')
+
+@app.route('/team')
+def team():
+    return render_template('team.html')
 
 if __name__ == '__main__':
     app.secret_key = 'how_to_Get_KEY'
