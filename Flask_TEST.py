@@ -29,7 +29,7 @@ def login():
         connection = psycopg2.connect(user='webadmin',
                                     password='ZSAxvp50885',
                                     host='node38438-project.proen.app.ruk-com.cloud',
-                                    port='11260',
+                                    port='5432',
                                     database='login')
 
         # connection.row_factory = psycopg2.Row
@@ -65,7 +65,7 @@ def register():
             connection = psycopg2.connect(user='webadmin',
                                     password='ZSAxvp50885',
                                     host='node38438-project.proen.app.ruk-com.cloud',
-                                    port='11260',
+                                    port='5432',
                                     database='login')
             cursor = connection.cursor()
     
@@ -100,4 +100,4 @@ def team():
 
 if __name__ == '__main__':
     app.secret_key = 'how_to_Get_KEY'
-    app.run(debug=True)
+    app.run(debug=True,port=80,host='0.0.0.0')
