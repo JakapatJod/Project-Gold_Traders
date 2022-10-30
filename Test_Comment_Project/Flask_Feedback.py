@@ -14,8 +14,6 @@ db = SQLAlchemy(app)
 
 @app.route('/')
 def index():
-    name = request.form['name']
-    comment = request.form['comment']
     connection = psycopg2.connect(user='webadmin',
                                     password='DMSgax19890',
                                     host='node38438-project.proen.app.ruk-com.cloud',
@@ -23,8 +21,7 @@ def index():
                                     database='feedbacks')
     cursor = connection.cursor()
     postgresSQL_select_Query = "select * from feed where username = %s and comment = %s "
-    remem = name,comment
-    cursor.execute(postgresSQL_select_Query,remem)
+    cursor.execute(postgresSQL_select_Query)
     Data_all = cursor.fetchall()
     
     result = Data_all
