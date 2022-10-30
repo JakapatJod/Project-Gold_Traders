@@ -48,7 +48,6 @@ p{
 .col-2 img{
     max-width: 100%;
     padding: 50px 0;
-    text-align: left;
 }
 .col-2 h1{
     font-size: 50px;
@@ -71,7 +70,7 @@ p{
     background: rgb(41, 41, 41);
 }
 .header{
-    background: #63320e    ;
+    background: rgb(119, 162, 171);
     font-family: 'Kanit', sans-serif;
 }
 .header .row{
@@ -142,7 +141,7 @@ h4{
     transform: translateY(-10px);
 }
 .footer{
-    background: #d2691e    ;
+    background: black;
     color: red;
     font-size: 14px;
     padding: 60px 0 20px;

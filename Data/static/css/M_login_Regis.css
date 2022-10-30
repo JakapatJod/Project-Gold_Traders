@@ -12,7 +12,7 @@ body
     justify-content: center;
     align-items: center;
     min-height:  100vh;
-    background: #63320e ;
+    background: rgb(119, 162, 171);
 
 }
 .box
@@ -20,7 +20,7 @@ body
     position: relative;
     width: 380px;
     height: 420px;
-    background: #63320e;
+    background: #000000;
     border-radius: 8px;
 }
 
@@ -29,7 +29,7 @@ body
     position: relative;
     inset:  2px;
     border-radius: 8px;
-    background: #ffffff;
+    background: #28292d;
     z-index: 10;
     padding: 50px 40px;
     display: flex;
@@ -37,7 +37,7 @@ body
 }
 .form h2
 {
-    color: #d2691e;
+    color: #45f3ff;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
@@ -75,7 +75,7 @@ body
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span
 {
-    color: #d2691e;
+    color: #45f3ff;
     transform: translateX(0px) translateY(-34px);
     font-size: 0.75em;
 }
@@ -87,7 +87,7 @@ body
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: #d2691e;
+    background: #45f3ff;
     border-radius: 4px;
     transition: 0.5s;
     pointer-events: none;
@@ -107,19 +107,19 @@ body
 {
     margin: 10px 0;
     font-size: 0.75em;
-    color: #000000;
+    color: #8f8f8f;
     text-decoration: none;
 }
 .links a:hover
 .links a:nth-child(2)
 {
-    color: #d2691e;
+    color: #45f3ff;
 }
 input[type="submit"]
 {
     border: none;
     outline: none;
-    background: #d2691e;
+    background: #45f3ff;
     padding: 11px 25px;
     width: 100px;
     margin-top: 10px;
@@ -132,11 +132,4 @@ input[type="submit"]
 .alert{
     color: red;
     text-align: center;
-}
-.inputBox a {
-    position: absolute;
-    left: 89%;
-    top: 38%;
-    z-index: 99;
-    cursor: pointer;
 }

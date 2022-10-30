@@ -4,7 +4,7 @@ try:
                                     password='DMSgax19890',
                                     host='node38438-project.proen.app.ruk-com.cloud',
                                     port='11260',
-                                    database='postgres')
+                                    database='login')
 
     connection.autocommit = True
 
