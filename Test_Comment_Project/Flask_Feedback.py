@@ -17,7 +17,7 @@ def index():
     connection = psycopg2.connect(user='webadmin',
                                     password='DMSgax19890',
                                     host='node38438-project.proen.app.ruk-com.cloud',
-                                    port='11260',
+                                    port='5432',
                                     database='feedbacks')
     cursor = connection.cursor()
     postgresSQL_select_Query = "select * from feed where username = %s and comment = %s "
@@ -41,7 +41,7 @@ def process():
             connection = psycopg2.connect(user='webadmin',
                                             password='DMSgax19890',
                                             host='node38438-project.proen.app.ruk-com.cloud',
-                                            port='11260',
+                                            port='5432',
                                             database='login')
             cursor = connection.cursor()
             
